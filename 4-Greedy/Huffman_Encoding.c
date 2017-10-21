@@ -21,11 +21,11 @@ typedef struct node {
 
 void swap(node tree[],int a,int b)
 {
-    node  x;
-    //printf("a ");
-    x.freq=tree[a].freq;
-    tree[a].freq=tree[b].freq;
-    tree[b].freq=x.freq;
+    node  x,y;
+    x=tree[a];
+    y=tree[b];
+    tree[a]=y;
+    tree[b]=x;
 }
 void percolateUpwards(node tree[],int k)
 {
@@ -154,7 +154,7 @@ int main()
         node x= Extract_min(tree,&k);
         node y= Extract_min(tree,&k);
 
-        printf("%d  %d\n",x.freq,y.freq);
+        //printf("%d  %d\n",x.freq,y.freq);
         int sum_freq = x.freq + y.freq;
         z = getNode(sum_freq);
 
