@@ -19,6 +19,7 @@ void select(activity arr[],int s,int n,int *k,int *c)
 }
 int main()
 {
+    
     int n,i,j,temp,a,b,q;
     activity arr[1000];
     printf("Enter The number of Activities\n");
