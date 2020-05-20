@@ -2,10 +2,9 @@ package DynamicProg;
 
 import java.util.Scanner;
 
-public class LongestIncSubseq {
+public class Palindrome_part {
 	
-	static int LIS(int arr[],int n) {
-		
+	static int pp(String str) {
 		return 0;
 	}
 	
@@ -13,12 +12,11 @@ public class LongestIncSubseq {
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
 		while(t-- > 0) {
-			int n = sc.nextInt();
-			int[] arr = new int[n];
-			for(int i=0;i<n;i++)
-				arr[i] = sc.nextInt();
-			System.out.println(LIS(arr,n));
+			String str = sc.next();
+			int len = pp(str);
+			System.out.println(len);
 		}
 		sc.close();
 	}
+	
 }
